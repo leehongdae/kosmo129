@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+		  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<!-- 회원 , 게시판  -->
+		<typeAlias type="a.b.c.com.kos.mem.vo.KosMemberVO" alias="kosmembervo"/>
+		
+		<!--  게시판  -->
+		<typeAlias type="a.b.c.com.kos.board.vo.KosBoardVO" alias="kosboardvo"/>
+		
+		<!-- 게시판 좋아요 -->
+		<typeAlias type="a.b.c.com.kos.like.vo.KosBoardLikeVO" alias="kosboardlikevo"/>
+		
+		<!-- 게시판 좋아요 -->
+		<typeAlias type="a.b.c.com.kos.rboard.vo.KosRboardVO" alias="kosrboardvo"/>
+		
+		<!-- 상품 게시판-->
+		<typeAlias type="a.b.c.com.kos.product.vo.KosProductVO" alias="kosproductvo"/>
+		
+		<!-- 카트 게시판-->
+		<typeAlias type="a.b.c.com.kos.cart.vo.KosCartVO" alias="koscartvo"/>
+		
+		<!-- 주문 게시판-->
+		<typeAlias type="a.b.c.com.kos.order.vo.KosOrderVO" alias="kosordervo"/>
+		
+		<!-- 캘린더 게시판-->
+		<typeAlias type="a.b.c.com.kos.calendar.vo.CalendarVO" alias="calendarvo"/>
+		
+		<!-- testLogin-->
+		<typeAlias type="a.b.c.com.kos.testLogin.vo.TestLoginVO" alias="testloginvo"/>		
+
+	</typeAliases>
+	
+</configuration>

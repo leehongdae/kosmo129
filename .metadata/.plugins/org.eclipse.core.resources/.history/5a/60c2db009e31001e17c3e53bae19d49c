@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<style type="text/css">
+			.wrapper {
+				border:1px solid #aaa;
+				margin: 0 auto;
+				width: 300px;
+				flex: column;
+				gap: 2px;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+	
+		<div class="wrapper">
+			<div class="content">
+				<div><span>ID : </span><input type="text"></div>
+				<div><span>PW : </span><input type="text"></div>
+			</div>
+			<div class="content">
+				<img src="#">
+			</div>
+			<div class="content">
+			
+			</div>
+		</div>
+	</body>
+</html>

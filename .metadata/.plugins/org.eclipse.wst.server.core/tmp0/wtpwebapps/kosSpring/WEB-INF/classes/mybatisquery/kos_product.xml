@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+          "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="a.b.c.com.kos.product.dao.KosProductDAO">
+
+	<insert id="kosProductInsert" parameterType="kosproductvo">
+	
+		INSERT INTO KOSMO_PRODUCT (
+									KPNUM, 
+									KPID, 
+									KPNAME, 
+									KPCOMPANY, 
+									KPFILE, 
+									KPCNT, 
+									KPPRICE, 
+									KPDESC, 
+									DELETEYN, 
+									INSERTDATE, 
+									UPDATEDATE
+									)
+						VALUES		(
+									#{kpnum}, 
+									#{kpid}, 
+									#{kpname}, 
+									#{kpcompany}, 
+									#{kpfile}, 
+									#{kpcnt}, 
+									#{kpprice}, 
+									#{kpdesc}, 
+									'Y', 
+									SYSDATE, 
+									SYSDATE
+									)
+	</insert>
+	
+	<select id="kosProductSelectAll" parameterType="kosproductvo" resultType="kosproductvo">
+	
+		SELECT * FROM (
+			SELECT 
+					A.KPNUM 	KPNUM,
+					A.KPID 		KPID,
+					A.KPNAME 	KPNAME,
+					A.KPCOMPANY KPCOMPANY,
+					A.KPFILE 	KPFILE,
+					A.KPCNT 	KPCNT,
+					A.KPPRICE 	KPPRICE,
+					A.KPDESC 	KPDESC,
+					A.DELETEYN  DELETEYN,
+					TO_CHAR(A.INSERTDATE, 'YYYY-MM-DD') INSERTDATE,
+		       		TO_CHAR(A.UPDATEDATE, 'YYYY-MM-DD') UPDATEDATE,	
+					<!-- 페이징 관련 쿼리 -->
+					CEIL(ROW_NUMBER() OVER(ORDER BY A.KPNUM)/#{pageSize}) pageSize,
+					COUNT(A.KPNUM) OVER() AS totalCount
+			FROM 	KOSMO_PRODUCT A
+			WHERE 	A.DELETEYN = 'Y'
+			ORDER 	BY 1 DESC
+		) WHERE pageSize = #{curPage}
+		
+	</select>
+	
+	<select id="kosProductSelect" parameterType="kosproductvo" resultType="kosproductvo">
+		
+		SELECT   A.KPNUM 		KPNUM
+				,A.KPID 		KPID
+				,A.KPNAME		KPNAME
+				,A.KPCOMPANY 	KPCOMPANY
+				,A.KPFILE 		KPFILE
+				,A.KPCNT 		KPCNT
+				,A.KPPRICE 		KPPRICE
+				,A.KPDESC 		KPDESC
+				,A.DELETEYN 	DELETEYN
+				,TO_CHAR(A.INSERTDATE, 'YYYY-MM-DD') INSERTDATE
+				,TO_CHAR(A.UPDATEDATE, 'YYYY-MM-DD') UPDATEDATE
+		FROM   	 KOSMO_PRODUCT A
+		WHERE 	 A.DELETEYN = 'Y'
+		AND 	 A.KPNUM = #{kpnum}
+	</select> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</mapper> 

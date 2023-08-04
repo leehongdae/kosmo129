@@ -1,0 +1,5 @@
+package a.b.c.com.kos.testLogin.testLoginDAO;
+
+public class TestLoginDAOImpl implements TestLoginDAO {
+
+}

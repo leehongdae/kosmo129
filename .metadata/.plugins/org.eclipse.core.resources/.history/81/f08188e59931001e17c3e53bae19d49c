@@ -1,0 +1,13 @@
+package a.b.c.com.kos.testLogin.testLoginVO;
+
+public class TestLoginVO {
+	
+	private String test_id; 
+	private String test_pw; 
+	private String test_snstype; 
+	private String test_snsid; 
+	private String test_email; 
+	private String test_gender; 
+	private String test_birthday; 
+
+}

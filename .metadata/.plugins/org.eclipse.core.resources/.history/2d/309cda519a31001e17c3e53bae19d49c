@@ -1,0 +1,11 @@
+package a.b.c.com.kos.testLogin.testLoginController;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TestLoginController {
+	
+	@Autowired(required=false)
+	TestLoginService testLoginService;s
+
+}

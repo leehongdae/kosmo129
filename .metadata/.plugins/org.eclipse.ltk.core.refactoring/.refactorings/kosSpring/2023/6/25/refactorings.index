@@ -1,0 +1,44 @@
+1687420852930	Copy package
+1687420858214	Copy package
+1687420865727	Copy package
+1687420869847	Copy package
+1687420879378	Rename package 'a.b.c.com.chat.co'
+1687420895999	Rename package 'a.b.c.com.chat.controller'
+1687420910804	Copy package
+1687420925618	Delete element
+1687420938588	Copy package
+1687420946111	Copy package
+1687420966945	Delete element
+1687420973776	Delete element
+1687421007937	Delete element
+1687421008968	Delete element
+1687421009950	Delete element
+1687421012204	Delete element
+1687421013480	Delete element
+1687421015969	Delete element
+1687421036875	Copy package
+1687421041665	Copy package
+1687421045035	Copy package
+1687421049506	Copy package
+1687421250121	Rename type 'KosCharService'
+1687421258122	Rename type 'KosCharServiceImpl'
+1687421531436	Delete element
+1687421533005	Delete element
+1687421534169	Delete element
+1687421535958	Delete element
+1687421542068	Delete element
+1687421609567	Rename type 'KosChatController'
+1687505865949	Copy file
+1687505968686	Copy package
+1687505975153	Copy package
+1687505980164	Copy package
+1687505986852	Rename package 'a.b.c.com.kos.canlendar.voo'
+1687506408954	Copy file
+1687506497607	Delete element
+1687506498507	Delete element
+1687506500159	Delete element
+1687506500970	Delete element
+1687511781203	Rename type 'KosCalendarVO'
+1687511890484	Rename type 'KosCalendarService'
+1687511903309	Rename type 'KosCalendarServiceImpl'
+1687511912120	Rename compilation unit 'KosCalendarController.java'

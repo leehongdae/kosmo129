@@ -1,0 +1,15 @@
+package a.b.c.com.kos.testLogin.dao;
+
+import org.springframework.stereotype.Repository;
+
+import a.b.c.com.kos.testLogin.vo.TestLoginVO;
+
+@Repository
+public class TestLoginDAOImpl implements TestLoginDAO {
+	
+public int testMemInsert(TestLoginVO tvo) {
+		
+		return testLoginDAO.testMemInsert(tvo);
+	}
+
+}

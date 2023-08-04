@@ -1,0 +1,22 @@
+package a.b.c.com.kos.testLogin.testLoginController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import a.b.c.com.kos.testLogin.testLoginService.TestLoginService;
+
+@Controller
+public class TestLoginController {
+	
+	@Autowired(required=false)
+	TestLoginService testLoginService;
+	
+	@PostMapping("TestLoginForm")
+	public String testLoginForm() {
+		logger.info(">>> testLoginForm() In");
+		
+		return "testLogin/testLoginForm";
+	}
+
+}

@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link href="./css/testLogin.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript">
+			
+		$(document).ready(function() {
+			
+			$("#signup").click(function() {
+				
+				location.href="testSignup.lhd";
+			});
+			
+		}); // end of ready()
+			
+		</script>
+
+	</head>
+	
+	
+	<body>
+	
+		<div class="wrapper">
+			<div class="content"><h3>SNS Login Test</h3></div>
+			<div class="content">
+				<div><span>I D  </span></div>
+				<div><input type="text" name="testid"></div>
+				<div><span>P W</span></div>
+				<div><input type="text" name="testpw"></div>
+			</div>
+			<div class="content">
+				<img src="img/img_sns/kakao_login.png">
+			</div>
+			<div class="content">
+				<input type="button" id="signup" value="Sign up">
+				<input type="button" id="signin" value="Sign in">
+			</div>
+		</div>
+	</body>
+</html>

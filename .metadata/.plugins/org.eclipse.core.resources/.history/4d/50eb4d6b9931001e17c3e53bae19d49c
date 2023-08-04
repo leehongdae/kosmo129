@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+
+	</head>
+	
+	<body>
+	
+	
+	<h3>KOS SPRING</h3>
+		<hr>
+		<a href="mainPage.lhd">메인 페이지</a><br>
+		<a href="mainPage01.lhd">메인 페이지01</a><br>
+		<p>
+		<a href="memForm.lhd">회원</a>
+		<a href="memDummy.lhd">회원 더미 생성</a><br>
+		
+		<a href="memSelectAll.lhd">회원목록</a><br>
+		<p>
+		<a href="loginForm.lhd">로그인</a><br>
+		<p>
+		<a href="boardForm.lhd">게시판</a><br>
+		<a href="boardSelectAll.lhd">게시글목록</a><br>
+		<p>
+		
+		<a href="rboardForm.lhd">댓글 쓰기</a><br>
+		
+		<p>
+		<a href="kosProductInsertForm.lhd">코스모 상품 입력</a><br>
+		<a href="productDummy.lhd">더미</a><br>		
+		<a href="kosProductSelectAll.lhd">코스모 상품  전체조회</a><br>
+		<p>
+		<a href="chat.lhd">채팅</a><br>
+		<p>
+		<a href="calendar.lhd">일정관리:캘린더</a><br>
+		<a href="calendarSelectAll.lhd">일정관리:전체조회</a><br>
+		<p>
+		<a href="flask_07_1.lhd">flask 연동</a><br>
+		<h3>Test Login</h3>
+		<a href="TestLoginInsert.lhd">TestLogin</a><br>
+		<a href="TestLoginInsert.lhd">TestLogin</a><br>
+		
+		
+		
+	
+	</body>
+</html>

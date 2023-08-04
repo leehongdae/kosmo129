@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.mem.service{KosMemberService.java[KosMemberService" modifiers="513" timestamp="1684927741700"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.mem.dao{KosMemberDAO.java[KosMemberDAO" modifiers="513" timestamp="1684927361104"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.common.chabun.dao{KosChabunDAO.java[KosChabunDAO" modifiers="513" timestamp="1686829293687"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.common.chabun.service{KosChabunService.java[KosChabunService" modifiers="513" timestamp="1686829249492"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.board.service{KosBoardService.java[KosBoardService" modifiers="513" timestamp="1685528923837"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.board.dao{KosBoardDAO.java[KosBoardDAO" modifiers="513" timestamp="1685513889686"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.like.dao{KosBoardLikeDAO.java[KosBoardLikeDAO" modifiers="513" timestamp="1685527253391"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.product.dao{KosProductDAO.java[KosProductDAO" modifiers="513" timestamp="1686571189652"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.product.service{KosProductService.java[KosProductService" modifiers="513" timestamp="1686744099250"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.cart.service{KosCartService.java[KosCartService" modifiers="513" timestamp="1687420767426"/>
+<typeInfo handle="=kosSpring/src&lt;a.b.c.com.kos.cart.dao{KosCartDAO.java[KosCartDAO" modifiers="513" timestamp="1687420748865"/>
+</typeInfoHistroy>

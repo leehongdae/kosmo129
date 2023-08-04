@@ -1,0 +1,6 @@
+package a.b.c.com.kos.testLogin.service;
+
+
+public interface TestLoginService {
+
+}

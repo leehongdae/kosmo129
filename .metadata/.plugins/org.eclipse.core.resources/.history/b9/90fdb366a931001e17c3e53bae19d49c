@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			
+			$("#submit").click(function() {
+				alert(">>> test_id" + $("#test_id").val())	
+				$("#testForm").attr({
+					 "action": "testMemInsert.lhd"
+					,"method":"POST"
+					,"enctype":"multipart/form-data"
+				}).submit();
+			});
+		});
+		
+	</script>
+	
+	<style type="text/css">
+		.wrapper {
+			border: 1px solid #aaa;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			width: 300px;
+			margin: 0 auto;
+		}
+		.content:last-child {
+			text-align: right;
+		}
+	</style>
+	
+	<body>
+		<form id=testForm>
+			<div class="wrapper">
+				<div class="content">
+					<span>Sign up</span>
+				</div>
+				<div class="content">
+					id:<input type="text" name="test_id" id="test_id">
+				</div>
+				<div class="content">
+					pw:<input type="text" name="test_pw">
+				</div>
+				<div class="content">
+					<input type="submit" id="submit" value="submit">
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

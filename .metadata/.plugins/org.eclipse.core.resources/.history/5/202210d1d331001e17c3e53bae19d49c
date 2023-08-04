@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+
+/* common */
+
+* {
+	margin : 0;
+	padding : 0;
+}
+
+/*/////////////////////////////////////////////////////// */
+
+
+/* loginForm */
+
+.wrapper {
+	border:1px solid #aaa;
+	border-radius:10px;
+	margin: 0 auto;
+	padding: 0;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.content {
+	padding-left: 5px;
+	margin : 5px;
+	text-align: center;
+}
+.wrapper > .content:last-child {
+	text-align: right;
+}
+.wrapper > .content:nth-child(2) > div:nth-child(2n-1) {
+	width: 30%;
+}
+.wrapper > .content:nth-child(2) > div:nth-child(2n) {
+	width: 90%;
+	margin-left: 5px;
+}
+		
+.content h3 {
+	text-align: center;
+}
+
+/*/////////////////////////////////////////////////////// */
+	
+/* insertfrom */
+.wrapper {
+	border: 1px solid #aaa;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+.content:last-child {
+	text-align: right;
+}

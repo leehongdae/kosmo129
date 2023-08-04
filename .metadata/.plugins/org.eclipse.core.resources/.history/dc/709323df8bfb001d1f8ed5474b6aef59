@@ -1,0 +1,105 @@
+package a.b.c.com.kos.board.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import a.b.c.com.common.ChabunUtil;
+import a.b.c.com.common.CommonUtils;
+import a.b.c.com.common.FileUploadUtil;
+import a.b.c.com.common.chabun.service.KosChabunService;
+import a.b.c.com.kos.board.service.KosBoardService;
+import a.b.c.com.kos.board.vo.KosBoardVO;
+
+@Controller
+public class KosBoardController {
+	
+	Logger logger = LogManager.getLogger(KosBoardController.class);
+	
+	@Autowired(required=false)
+	private KosBoardService kosBoardService;
+	
+	@Autowired(required=false)
+	private KosChabunService kosChabunService;
+	
+	// boardForm
+	@GetMapping("boardForm")
+	public String kosBoardForm() {
+		logger.info(">>> String kosBoardForm() In");
+		
+		return "board/boardForm";
+	} // end of String kosBoardForm()
+	
+	
+	// boardInsert
+	@PostMapping("boardInsert")
+	public String kosBoardInsert(HttpServletRequest req) {
+		logger.info(">>> kosBoardInsert(HttpServletRequest req) IN ");	
+		
+		String bnum = ChabunUtil.getBoardChabun("D", kosChabunService.getKosBoardChabun().getBnum());
+		
+		FileUploadUtil fu = new FileUploadUtil( CommonUtils.MEM_IMG_UPLOAD_PATH,
+												CommonUtils.MEM_IMG_FILE_SIZE,
+												CommonUtils.MEM_EN_CODE);
+		boolean b = fu.imgfileUpload(req);
+		logger.info(">>> kosBoardInsert() :: b : " + b);
+		
+		KosBoardVO _bvo = null;
+		_bvo = new KosBoardVO();
+		
+		_bvo.setBnum(bnum);
+		_bvo.setBsubject(fu.getParameter("bsubject"));
+		_bvo.setBname(fu.getParameter("bname"));
+		_bvo.setBcontent(fu.getParameter("bcontent"));
+		_bvo.setBfile(fu.getFileName("bfile"));
+		_bvo.setBpw(fu.getParameter("bpw"));
+		
+		int nCnt = kosBoardService.kosBoardInsert(_bvo);		
+		if(nCnt > 0) {
+			logger.info(">>> kosBoardInsert() :: nCnt : " + nCnt);
+			return "board/boardInsert";
+		}	
+		return "board/boardForm";
+	} // end of kosBoardInsert(HttpServletRequest req)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+} // end of class
